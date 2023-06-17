@@ -11,7 +11,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title"
-          content="Instructions: HowTo Install Go on Ubuntu 20.04 - Attune Automation">
+          content="Instructions: How to Install Go on Ubuntu 20.04 - Attune Automation">
     <meta name="description"
           content="This Blueprint aims to take you on a journey of acquiring and installing the 
 newest version of Go, on an Ubuntu 20.04 server. Moreover, it will guide you through the process of building 
@@ -32,7 +32,7 @@ into an executable binary for effort" />
     <meta property="article:section" content="IT Instruction" />
 
     <meta name="twitter:title"
-          content="Instructions: HowTo Install Go on Ubuntu 20.04 - Attune Automation" />
+          content="Instructions: How to Install Go on Ubuntu 20.04 - Attune Automation" />
     <meta name="twitter:description" content="This Blueprint aims to take you on a journey of acquiring and installing the 
 newest version of Go, on an Ubuntu 20.04 server. Moreover, it will guide you through the process of building 
 the quintessential 'Hello, World!' application and converting your Go code 
@@ -52,7 +52,7 @@ into an executable binary for effort" />
           href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <link rel="stylesheet" href="../styles/style.css">
 
-    <title>How to Install Go on Ubuntu 20.04</title>
+    <title>How to Install Go on Ubuntu 20.04 - Attune Automation</title>
 </head>
 
 
@@ -350,7 +350,7 @@ to extract, <code>-v</code> tells tar to be verbose, and <code>-f</code> tells <
                         </div>
                         <div class="row py-1">
                             <code class="language-sql">
-ssh {user}@{ubuntunode}
+ssh {sudouser}@{ubuntunode}
                             </code>
                         </div>
 
@@ -371,8 +371,8 @@ ssh {user}@{ubuntunode}
                 <code class="language-sql py-0">
 mkdir -p ~/Downloads/go
 cd ~/Downloads/go
-curl -OL {goTarbellUrl}
-sudo tar -C /usr/local -xvf go*.tar.gz
+curl -OL {goTarballUrl}
+tar -C /usr/local -xvf go*.tar.gz
 rm -rf ~/Downloads/go
                 </code>
             </pre>
@@ -429,7 +429,7 @@ and contains a list of commands that is run every time the user logs in.</p>
         <div class="col px-0">
             <pre>
                 <code class="language-sql py-0">
-sudo echo &#x27;export PATH=$PATH:/usr/local/go/bin&#x27; &gt;&gt; ~/.profile
+echo &#x27;export PATH=$PATH:/usr/local/go/bin&#x27; &gt;&gt; ~/.profile
 source ~/.profile
 go version
                 </code>
@@ -499,7 +499,18 @@ running a program that requires frequent changes.</p>
 
 
 
-    
+
+                        <div class="row">
+                            <p>
+                                Connect via ssh:
+                            </p>
+                        </div>
+                        <div class="row py-1">
+                            <code class="language-sql">
+ssh {user}@{ubuntunode}
+                            </code>
+                        </div>
+
 
 
     

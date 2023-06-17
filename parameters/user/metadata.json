@@ -1,7 +1,7 @@
 {
-    "externalUuid4": "9e5f0860-75fe-4f29-824c-554015c184e0", 
+    "externalUuid4": "20865300-075b-49a9-9c93-d04eedfd672c", 
     "key": "user", 
-    "name": "user", 
+    "name": "User", 
     "showInPlan": true, 
     "type": "c.s.s.b.phv.LinOsCred"
 }

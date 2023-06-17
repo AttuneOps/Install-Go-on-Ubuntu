@@ -100,8 +100,9 @@ configured.
 | Name | Type | Script Reference | Comment |
 | ---- | ---- | ---------------- | ------- |
 | Go Tarball URL | Text | `gotarballurl` | Go Current Binary Release Tarball URL. Navigate to the [official Go downloads page](https://go.dev/dl/) in your web browser. From there, copy the URL for the current binary release’s tarball. |
+| Sudo User | Linux/Unix Credential | `sudouser` |  |
 | Ubuntu Node | Linux/Unix Node | `ubuntunode` |  |
-| user | Linux/Unix Credential | `user` |  |
+| User | Linux/Unix Credential | `user` |  |
 
 
 
